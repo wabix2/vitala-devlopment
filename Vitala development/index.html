@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitala AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "marked": "https://cdn.jsdelivr.net/npm/marked@13.0.0/lib/marked.esm.js"
+  }
+}
+</script>
+<style>
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+
+  .prose-dark h1, .prose-dark h2, .prose-dark h3, .prose-dark h4 { font-weight: 600; margin-top: 1.25em; margin-bottom: 0.5em; line-height: 1.2; }
+  .prose-dark h1 { font-size: 1.875rem; }
+  .prose-dark h2 { font-size: 1.5rem; }
+  .prose-dark h3 { font-size: 1.25rem; }
+  .prose-dark p { margin-top: 0.75em; margin-bottom: 0.75em; }
+  .prose-dark ul, .prose-dark ol { margin-top: 0.75em; margin-bottom: 0.75em; padding-left: 1.5em; }
+  .prose-dark li { margin-top: 0.25em; margin-bottom: 0.25em; }
+  .prose-dark ul { list-style-type: disc; }
+  .prose-dark ol { list-style-type: decimal; }
+  .prose-dark strong { font-weight: 600; }
+  .prose-dark code { background-color: rgba(0,0,0,0.2); padding: 0.2em 0.4em; margin: 0; font-size: 85%; border-radius: 6px; }
+  .prose-dark pre { background-color: rgba(0,0,0,0.2); padding: 1em; border-radius: 8px; overflow-x: auto; }
+  .prose-dark pre code { padding: 0; background-color: transparent; }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

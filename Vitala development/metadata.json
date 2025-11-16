@@ -1,0 +1,7 @@
+{
+  "name": "Vitala AI Assistant",
+  "description": "An intelligent AI assistant designed to help students get instant answers and clarifications on their study topics. Ask any question and get a clear, concise response.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
